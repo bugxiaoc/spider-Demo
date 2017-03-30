@@ -1,0 +1,60 @@
+a{
+	color:#fff;
+	text-decoration:none;
+}
+span{
+	color:rgba(0,0,0,0.5);
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+}
+.three{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+}
+.message{
+	position:absolute;
+	width:375px;
+	height:200px;
+	background-color:yellow;
+	z-index:999;
+	border-radius:0px 0px 10px 10px;
+}
+.title{
+	height:20px;
+	padding:8px 25px;
+	color:#fff;
+	cursor:move;
+	background-color:red;
+	border-radius:0px 0px 20px 20px;
+}
+.title h3{
+	font-size:14px;
+	float:left;
+}
+.title a{
+	font-size:14px;
+	float:right;
+}
+.context{
+	position:absolute;
+}
+.context .inText{
+	text-align:right;
+	margin:20px 80px 20px;
+	color:#ccc;
+	font-size:14px;
+}
+
+.context input[type='button']{
+	width:80px;
+	height:25px;
+	margin:0px 19px;
+	background-color:#fff;
+	border:1px solid #119da9;
+}
+.context input[type='button']:hover{
+	background-color:#ccc;
+}

@@ -1,0 +1,57 @@
+<!doctype html/>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>DIV Message</title>
+	<link href="./css/default.css" rel="stylesheet" type="text/css" />
+	<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	.ts{
+		display:block;
+		height:30px;
+		width:120px;
+		text-align:center;
+		text-decoration:none;
+		
+		border-radius:10px;
+		line-height:25px;
+		
+		background-color:#ccc;
+		color:#fff;
+		
+		float:left;
+		margin:300px 600px;
+	}
+	.ts:hover{
+		background-color:#fff;
+		color:#green;
+	}
+	</style>
+</head>
+
+<body>
+	<a class='ts' href='javascript:message();'>点击</a>
+</body>
+<script src="./js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="./js/default.js" type="text/javascript"></script>
+<script>
+	function message()
+	{
+		$.box({
+			title:"word",
+			wait:"adasd;laj",
+			three:true,
+			callback:function(backData){
+				if(backData){
+					alert('Yes');
+				}else{
+					alert('close');
+				}
+			}
+		});
+	}
+</script>
+</html>
